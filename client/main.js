@@ -13,11 +13,9 @@ class App extends Component {
   };
 
   checkState = (stuff = true) => {
-    console.log('stuff', stuff);
     const { counter } = this.state;
-    const { emptyProp } = this.props;
+    console.log('stuff', stuff);
     console.log('counter', counter);
-    console.log('emptyProp', emptyProp);
   };
 
   render() {
