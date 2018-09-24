@@ -1,0 +1,32 @@
+{
+  "name": "ms-edge",
+  "private": true,
+  "scripts": {
+    "start": "meteor run",
+    "test": "meteor test --once --driver-package meteortesting:mocha",
+    "test-app": "TEST_WATCH=1 meteor test --full-app --driver-package meteortesting:mocha",
+    "visualize": "meteor --production --extra-packages bundle-visualizer"
+  },
+  "dependencies": {
+    "@babel/runtime": "7.0.0",
+    "babel-polyfill": "^6.26.0",
+    "meteor-node-stubs": "^0.4.1",
+    "react": "^16.5.2",
+    "react-dom": "^16.5.2"
+  },
+  "devDependencies": {
+    "@babel/core": "7.1.0",
+    "@babel/plugin-proposal-class-properties": "7.1.0",
+    "@babel/preset-flow": "7.0.0",
+    "babel-eslint": "^9.0.0",
+    "babel-plugin-module-resolver": "^3.1.1",
+    "babel-plugin-react-intl": "https://github.com/Floriferous/babel-plugin-react-intl/tarball/master"
+  },
+  "meteor": {
+    "mainModule": {
+      "client": "client/main.js",
+      "server": "server/main.js"
+    },
+    "testModule": "tests/main.js"
+  }
+}
